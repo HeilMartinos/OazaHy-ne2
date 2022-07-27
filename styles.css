@@ -8,40 +8,79 @@ body {
   color: black;
   font-size: 1.3em;
   overflow-x: hidden;
+  text-align: justify;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 header {
   background: seashell;
-  height: 150px;
 }
 #logo {
-  height: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  padding: 30px;
-}
-#logo > img {
-  height: 100%;
+  align-items: center;
 }
 #title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
+  position: relative;
+  bottom: 10px;
 }
 #titlemain {
   font-size: 50px;
   position: relative;
   top: 20px;
-  left: -5px;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}
+#subtitle {
+  position: relative;
+  left: 3px;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+#logo > img {
+  padding: 10px;
+  width: 100px;
+}
+.elements {
+  display: none;
 }
 #mobilenav {
   display: none;
 }
-#menuicon {
+.menuimage {
   display: none;
 }
 #shortcut {
   display: none;
+}
+#content {
+  min-width: 300px;
+  max-width: 80vw;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 0;
+}
+footer {
+  background: seashell;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: underline;
+  padding: 10px;
+  font-size: 15px;
+}
+#end {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
 }
