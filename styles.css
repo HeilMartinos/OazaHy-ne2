@@ -22,21 +22,6 @@ header {
   align-items: center;
   border-bottom: 10px solid #eecb6c;
 }
-#logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s;
-  margin: 0px -50px;
-}
-#title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  bottom: 10px;
-  flex-wrap: wrap;
-}
 #titlemain {
   font-size: 50px;
   position: relative;
@@ -52,6 +37,20 @@ header {
   display: none;
 }
 @media (min-width: 1070px) {
+  #title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    bottom: 10px;
+    flex-wrap: wrap;
+  }
+  #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+  }
   nav {
     display: flex;
     flex-direction: row;
@@ -64,8 +63,30 @@ header {
   #logo:hover {
     transform: scale(1.05);
   }
+  #logo > img {
+    padding: 10px;
+    width: 100px;
+  }
 }
 @media (max-width: 1069px) {
+  #titlemain {
+    font-size: 10vw;
+  }
+  #subtitle {
+    font-size: 7vw;
+    top: 1vh;
+  }
+  .foska {
+    width: 20vw;
+  }
+  #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    margin: 0px -50px;
+    transform: scale(0.6);
+  }
   nav {
     display: none;
   }
@@ -77,9 +98,6 @@ header {
   .menuimage:hover {
     background: #eecb6c;
     cursor: pointer;
-  }
-  #logo {
-    transform: scale(0.7);
   }
   #pojemnik:hover #mobilenav {
     display: flex;
@@ -97,10 +115,21 @@ header {
     top: 100px;
     height: 300px;
   }
-}
-#logo > img {
-  padding: 10px;
-  width: 100px;
+  #title {
+    position: relative;
+    bottom: 3vw;
+  }
+  .navelement:hover {
+    color: white;
+  }
+  .navelementunveil:hover {
+    color: white;
+  }
+  .elements {
+    position: relative;
+    z-index: 2;
+    border: 2px solid #eecb6c;
+  }
 }
 .elements {
   display: none;
@@ -110,7 +139,7 @@ header {
   display: none;
 }
 #content {
-  min-width: 300px;
+  min-width: 250px;
   max-width: 80vw;
   margin-right: auto;
   margin-left: auto;
