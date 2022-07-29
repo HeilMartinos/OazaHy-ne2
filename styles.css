@@ -10,6 +10,14 @@ body {
   overflow-x: hidden;
   text-align: justify;
 }
+#backimage > img {
+  position: fixed;
+  opacity: 0.05;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  overflow: hidden;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -21,6 +29,8 @@ header {
   justify-content: space-around;
   align-items: center;
   border-bottom: 10px solid #eecb6c;
+  position: sticky;
+  top: 0px;
 }
 #titlemain {
   font-size: 50px;
@@ -35,6 +45,15 @@ header {
 }
 #mobilenav {
   display: none;
+}
+#strony {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#strony > a:hover {
+  text-decoration: underline;
 }
 @media (min-width: 1070px) {
   #title {
@@ -130,6 +149,9 @@ header {
     z-index: 2;
     border: 2px solid #eecb6c;
   }
+  .option {
+    padding: 0;
+  }
 }
 .elements {
   display: none;
@@ -204,6 +226,7 @@ i:hover {
 }
 .option {
   background: #eecb6c;
+  padding: 20px;
 }
 .navelementunveil:hover > .elements {
   display: block;
