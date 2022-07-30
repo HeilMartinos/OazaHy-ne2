@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  font-family: "Anek Malayalam", sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: black;
   font-size: 1.3em;
   overflow-x: hidden;
@@ -36,13 +36,14 @@ header {
 #titlemain {
   font-size: 40px;
   position: relative;
-  top: 18px;
+  top: 15px;
   font-weight: bold;
   text-shadow: 2px 2px black;
 }
 #subtitle {
   position: relative;
   left: 3px;
+  top: 2px;
 }
 #mobilenav {
   display: none;
@@ -93,6 +94,7 @@ header {
   bottom: 0px;
   left: 0px;
   text-align: center;
+  padding: 5px 0;
 }
 #shortcut:hover #covertitle {
   opacity: 1;
@@ -131,7 +133,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 20px;
-  padding: 0 3vw;
+  padding: 3vh 3vw;
   border-right: 1px dotted black;
 }
 #strony {
