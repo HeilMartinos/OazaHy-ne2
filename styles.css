@@ -116,10 +116,16 @@ footer {
   padding: 10px;
   font-size: 15px;
 }
+#logooazy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #logooazy > img {
   width: 10vw;
   position: relative;
   z-index: 10;
+  border-right: 1px dotted black;
 }
 #linksy {
   display: grid;
