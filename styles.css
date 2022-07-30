@@ -116,6 +116,11 @@ footer {
   padding: 10px;
   font-size: 15px;
 }
+#logooazy > img {
+  width: 10vw;
+  position: relative;
+  z-index: 10;
+}
 #linksy {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -195,9 +200,6 @@ i:hover {
   width: 300%;
   padding: 0;
   text-align: center;
-}
-input {
-  display: none;
 }
 @media (min-width: 1070px) {
   #title {
