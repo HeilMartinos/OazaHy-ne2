@@ -57,23 +57,47 @@ header {
   align-items: center;
   position: relative;
   width: 80vw;
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
 }
 #shortcut > img {
   width: 80vw;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+}
+#shortcut:hover > img {
+  transform: scale(1.02);
+}
+#szary {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+#shortcut:hover {
+  cursor: pointer;
+}
+#shortcut:hover #szary {
+  background: grey;
+  opacity: 0.2;
 }
 #covertitle {
-  display: none;
-}
-#shortcut:hover #covertitle {
-  display: block;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
   position: absolute;
   width: 100%;
   bottom: 0px;
   left: 0px;
+  text-align: center;
+}
+#shortcut:hover #covertitle {
+  opacity: 1;
   background: #eecb6c;
   z-index: 4;
-  text-align: center;
   color: white;
 }
 #content {
@@ -205,6 +229,10 @@ input {
   #logo > img {
     padding: 10px;
     width: 5vw;
+  }
+  .elements {
+    border-radius: 10px;
+    overflow: hidden;
   }
 }
 @media (max-width: 1069px) {
