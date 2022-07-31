@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   font-family: "Quicksand", sans-serif;
   color: black;
@@ -10,6 +11,7 @@ body {
   overflow-x: hidden;
   text-align: justify;
 }
+
 #backimage > img {
   position: fixed;
   opacity: 0.05;
@@ -18,11 +20,13 @@ body {
   z-index: -1;
   overflow: hidden;
 }
+
 a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
+
 header {
   background: #ffe8a8;
   display: flex;
@@ -33,6 +37,7 @@ header {
   top: 0px;
   z-index: 5;
 }
+
 #titlemain {
   font-size: 40px;
   position: relative;
@@ -40,18 +45,22 @@ header {
   font-weight: bold;
   text-shadow: 2px 2px black;
 }
+
 #subtitle {
   position: relative;
   left: 3px;
   top: 2px;
 }
+
 #mobilenav {
   display: none;
 }
+
 .elements {
   display: none;
   background: #eecb6c;
 }
+
 #shortcut {
   display: flex;
   justify-content: center;
@@ -62,14 +71,17 @@ header {
   overflow: hidden;
   border-radius: 20px;
 }
+
 #shortcut > img {
   width: 80vw;
   border-radius: 20px;
   transition: all 0.2s ease-in-out;
 }
+
 #shortcut:hover > img {
   transform: scale(1.02);
 }
+
 #szary {
   opacity: 0;
   position: absolute;
@@ -79,13 +91,16 @@ header {
   height: 100%;
   border-radius: 20px;
 }
+
 #shortcut:hover {
   cursor: pointer;
 }
+
 #shortcut:hover #szary {
   background: grey;
   opacity: 0.2;
 }
+
 #covertitle {
   transition: all 0.2s ease-in-out;
   opacity: 0;
@@ -96,6 +111,7 @@ header {
   text-align: center;
   padding: 5px 0;
 }
+
 #shortcut:hover #covertitle {
   opacity: 1;
   background: #eecb6c;
@@ -110,18 +126,21 @@ footer {
   padding: 10px;
   font-size: 15px;
 }
+
 #logooazy {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
+
 #logooazy > img {
   width: 10vw;
   position: relative;
   z-index: 10;
   border-right: 1px dotted black;
 }
+
 #linksy {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -129,6 +148,7 @@ footer {
   padding: 3vh 3vw;
   border-right: 1px dotted black;
 }
+
 #strony {
   display: flex;
   flex-direction: column;
@@ -137,25 +157,31 @@ footer {
   padding: 0 3vw;
   border-right: 1px dotted black;
 }
+
 #strony > a:hover {
   text-decoration: underline;
 }
+
 #socials {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 3vw;
 }
+
 i {
   font-size: 40px;
   padding: 10px;
 }
+
 i:hover {
   color: #eecb6c;
 }
+
 #linksy > a:hover {
   text-decoration: underline;
 }
+
 #end {
   display: flex;
   align-items: center;
@@ -164,14 +190,17 @@ i:hover {
   background-color: #eecb6c;
   padding: 10px;
 }
+
 .navelement {
   padding: 5px 20px;
   transition: all 0.2s;
   border-right: 1px dotted black;
 }
+
 .navelement:hover {
   background: #eecb6c;
 }
+
 .navelementunveil {
   position: relative;
   display: flex;
@@ -180,18 +209,22 @@ i:hover {
   transition: all 0.2s;
   border-right: 1px dotted black;
 }
+
 .navelementunveil:hover {
   cursor: pointer;
   background: #eecb6c;
 }
+
 .option:hover {
   color: white;
 }
+
 .option {
   background: #eecb6c;
   padding: 10px;
   border-bottom: 1px dotted black;
 }
+
 .navelementunveil:hover > .elements {
   display: block;
   position: absolute;
@@ -202,6 +235,23 @@ i:hover {
   padding: 0;
   text-align: center;
 }
+
+#content {
+  min-width: 250px;
+  max-width: 80vw;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 80vh;
+  padding: 30px 10px;
+  overflow: visible;
+}
+
+#photo {
+  width: 100%;
+  grid-column: 1;
+  box-shadow: 5px 5px #eecb6c;
+  border: 1px solid black;
+}
 @media (min-width: 1070px) {
   #title {
     display: flex;
@@ -211,47 +261,94 @@ i:hover {
     bottom: 10px;
     flex-wrap: wrap;
   }
+
   #logo {
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
   }
+
   nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 10px;
   }
+
   .menuimage {
     display: none;
   }
+
   #logo:hover {
     transform: scale(1.05);
   }
+
   #logo > img {
     padding: 10px;
     width: 5vw;
   }
+
   .elements {
     border-radius: 10px;
     overflow: hidden;
   }
+
   #content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 200px;
+    grid-template-rows: 80px auto auto auto;
     column-gap: 50px;
+    row-gap: 0px;
   }
+
   #content > p {
+    grid-row-start: 2;
     grid-column-start: 1;
   }
-  h3 {
-    grid-column-start: 2;
+
+  #content > img {
+    width: 100%;
+    box-shadow: 5px 5px #eecb6c;
+  }
+  #content > span {
+    margin: 0;
+    grid-row-start: 4;
+  }
+  #news {
     grid-row-start: 1;
-    text-align: center;
+    grid-column-start: 2;
+  }
+  #calendar {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    position: relative;
+    top: 170px;
+    left: 10px;
+    height: 200px;
   }
 }
+#content > h2 {
+  text-align: left;
+}
+#content > p {
+  padding: 20px 0;
+}
+#calendar {
+  margin: 20px 0;
+}
+#news > a > p {
+  text-align: left;
+  padding: 5px 10px;
+  text-decoration: underline;
+}
+#news > a > img {
+  width: 100%;
+  border: 5px solid black;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+
 @media (max-width: 1069px) {
   #titlemain {
     font-size: 10vw;
@@ -259,13 +356,16 @@ i:hover {
   footer {
     font-size: 2.3vw;
   }
+
   #subtitle {
     font-size: 7vw;
     top: 1vh;
   }
+
   .foska {
     width: 20vw;
   }
+
   #logo {
     display: flex;
     justify-content: center;
@@ -274,25 +374,31 @@ i:hover {
     margin: 0px -50px;
     transform: scale(0.6);
   }
+
   nav {
     display: none;
   }
+
   .navelement {
     border: none;
     width: 100%;
   }
+
   .navelementunveil {
     border: none;
   }
+
   .menuimage {
     display: block;
     width: 10vw;
     border-radius: 10px;
   }
+
   .menuimage:hover {
     background: #eecb6c;
     cursor: pointer;
   }
+
   #pojemnik:hover #mobilenav {
     display: flex;
     flex-direction: column;
@@ -307,38 +413,30 @@ i:hover {
     top: 100px;
     height: auto;
   }
+
   #title {
     position: relative;
     bottom: 3vw;
   }
+
   .navelement:hover {
     color: white;
   }
+
   .navelementunveil:hover {
     color: white;
   }
+
   .navelementunveil:hover .elements {
     position: relative;
   }
+
   .option {
     padding: 0;
     border: none;
   }
+
   .option:hover {
     text-decoration: underline;
   }
-}
-#content {
-  min-width: 250px;
-  max-width: 80vw;
-  margin-right: auto;
-  margin-left: auto;
-  min-height: 80vh;
-  padding: 30px 10px;
-  overflow: visible;
-}
-#content > img {
-  width: 100%;
-  grid-column: 1;
-  box-shadow: 5px 5px #eecb6c;
 }
