@@ -323,7 +323,7 @@ i:hover {
     grid-column-start: 2;
     grid-row-start: 3;
     position: relative;
-    top: 170px;
+    top: 20vh;
     left: 10px;
     height: 200px;
   }
