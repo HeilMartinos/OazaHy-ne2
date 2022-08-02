@@ -237,12 +237,11 @@ i:hover {
 }
 
 #content {
-  min-width: 250px;
   max-width: 80vw;
   margin-right: auto;
   margin-left: auto;
   min-height: 80vh;
-  padding: 30px 10px;
+  padding: 30px 1vw;
   overflow: visible;
 }
 
@@ -438,5 +437,14 @@ i:hover {
 
   .option:hover {
     text-decoration: underline;
+  }
+  #shortcut {
+    width: 90vw;
+  }
+  #shortcut img {
+    width: 90vw;
+  }
+  #content {
+    max-width: 90vw;
   }
 }

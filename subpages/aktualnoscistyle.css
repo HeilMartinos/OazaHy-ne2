@@ -1,3 +1,27 @@
 #content {
-  display: block;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+.news > a > p {
+  text-align: left;
+  padding: 5px 10px;
+  text-decoration: underline;
+}
+.news > a > img {
+  width: 40vw;
+  border: 5px solid black;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+@media (max-width: 1070px) {
+  #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .news > a > img {
+    width: 100%;
+  }
 }
