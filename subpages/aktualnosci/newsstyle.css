@@ -1,3 +1,24 @@
 #content {
   display: block;
 }
+p {
+  margin: 15px 0;
+}
+#gallery {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 5px;
+  row-gap: 5px;
+}
+#gallery > img {
+  width: 20vw;
+}
+@media (max-width: 700px) {
+  #gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  #gallery > img {
+    width: 40vw;
+  }
+} ;
