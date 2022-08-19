@@ -447,4 +447,7 @@ i:hover {
   #content {
     max-width: 90vw;
   }
+  #logooazy {
+    display: none;
+  }
 }
