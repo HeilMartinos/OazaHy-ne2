@@ -9,6 +9,7 @@ p {
   grid-template-columns: auto auto auto auto;
   column-gap: 5px;
   row-gap: 5px;
+  border: none;
 }
 #gallery > img {
   width: 20vw;

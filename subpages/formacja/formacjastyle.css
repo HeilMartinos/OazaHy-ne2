@@ -1,3 +1,38 @@
 #content {
   display: block;
 }
+.swiadectwo {
+  font-style: italic;
+  color: rgb(48, 47, 46);
+  border-left: 2px solid rgb(48, 47, 46);
+  padding: 10px;
+  margin: 0 30px;
+}
+h2 {
+  border-bottom: 5px dotted #eecb6c;
+  padding: 10px 0;
+}
+#content a:hover {
+  text-decoration: underline;
+}
+#gallery {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 5px;
+  row-gap: 5px;
+  border: 3px dotted #eecb6c;
+  padding: 10px;
+  justify-content: center;
+}
+#gallery > img {
+  width: 20vw;
+}
+@media (max-width: 700px) {
+  #gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  #gallery > img {
+    width: 40vw;
+  }
+} ;

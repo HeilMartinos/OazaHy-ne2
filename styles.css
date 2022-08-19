@@ -343,7 +343,7 @@ i:hover {
 }
 #news > a > img {
   width: 100%;
-  border: 5px solid black;
+  border: 5px solid #bd9e4b;
   border-radius: 10px;
   margin: 0 10px;
 }

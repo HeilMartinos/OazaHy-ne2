@@ -11,7 +11,7 @@
 }
 .news > a > img {
   width: 40vw;
-  border: 5px solid black;
+  border: 5px solid #bd9e4b;
   border-radius: 10px;
   margin: 0 10px;
   overflow: hidden;
