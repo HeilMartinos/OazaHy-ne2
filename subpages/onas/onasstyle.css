@@ -36,6 +36,13 @@ span {
   p > img {
     width: 80vw;
   }
+  #gallery {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  #gallery > img {
+    width: 40vw;
+  }
 }
 ul {
   margin-left: 50px;
