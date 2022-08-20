@@ -1,3 +1,39 @@
 #content {
   display: block;
 }
+p {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+  align-items: center;
+}
+p > img {
+  display: block;
+  width: 30vw;
+  box-shadow: 3px 3px #eecb6c;
+  margin: 10px;
+}
+span {
+  padding: 30px;
+  border: 2px dotted #eecb6c;
+}
+#gallery {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 5px;
+  row-gap: 5px;
+  border: 3px dotted #eecb6c;
+  padding: 10px;
+  justify-content: center;
+}
+#gallery > img {
+  width: 20vw;
+}
+@media (max-width: 700px) {
+  p {
+    flex-direction: column;
+  }
+  p > img {
+    width: 80vw;
+  }
+}
