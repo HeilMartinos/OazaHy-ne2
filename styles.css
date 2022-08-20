@@ -347,7 +347,13 @@ i:hover {
   border-radius: 10px;
   margin: 0 10px;
 }
-
+#gallery img {
+  border: 1px solid black;
+  transition: all 0.2s ease-in-out;
+}
+#gallery img:hover {
+  transform: scale(1.2);
+}
 @media (max-width: 1069px) {
   #titlemain {
     font-size: 10vw;

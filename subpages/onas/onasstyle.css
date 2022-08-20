@@ -37,3 +37,14 @@ span {
     width: 80vw;
   }
 }
+ul {
+  margin-left: 50px;
+}
+.opis {
+  border-bottom: 4px dotted #eecb6c;
+}
+#wiki {
+  color: dimgray;
+  border: none;
+  text-align: left;
+}
