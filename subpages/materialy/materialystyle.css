@@ -1,10 +1,19 @@
 #content {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 #content a:hover {
   text-decoration: underline;
+}
+#content2 {
+  flex-direction: column;
+  max-width: 80vw;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 80vh;
+  padding: 30px 1vw;
+  overflow: visible;
 }
 #content img {
   box-shadow: 4px 4px#bd9e4b;
@@ -15,4 +24,18 @@
   border-left: 2px solid rgb(48, 47, 46);
   padding: 10px;
   margin: 0 30px;
+}
+#content a {
+  color: #bd9e4b;
+}
+p {
+  margin: 20px 0;
+}
+h3 {
+  border-bottom: 2px dotted #bd9e4b;
+}
+@media (max-width: 600px) {
+  .pion {
+    flex-direction: column;
+  }
 }
