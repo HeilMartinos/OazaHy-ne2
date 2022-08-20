@@ -15,6 +15,12 @@
   padding: 30px 1vw;
   overflow: visible;
 }
+#content2 a {
+  color: #bd9e4b;
+}
+#content2 a:hover {
+  text-decoration: underline;
+}
 #content img {
   box-shadow: 4px 4px#bd9e4b;
 }
