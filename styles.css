@@ -229,10 +229,9 @@ i:hover {
   display: block;
   position: absolute;
   background: #eee4dd;
-  padding: 10px 10px;
+  padding:0;
   margin-top: 30px;
   width: 300%;
-  padding: 0;
   text-align: center;
 }
 
@@ -248,8 +247,11 @@ i:hover {
 #photo {
   width: 100%;
   grid-column: 1;
+  grid-row-start: 3
+  ;
   box-shadow: 5px 5px #eecb6c;
   border: 1px solid black;
+  margin: 20px 0;
 }
 @media (min-width: 1070px) {
   #title {
@@ -298,7 +300,7 @@ i:hover {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 80px auto auto auto;
     column-gap: 50px;
-    row-gap: 0px;
+    row-gap: -20px;
   }
 
   #content > p {
