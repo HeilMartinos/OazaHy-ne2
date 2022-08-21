@@ -316,15 +316,13 @@ i:hover {
   }
   #news {
     grid-row-start: 1;
+    grid-row-end: 4;
     grid-column-start: 2;
   }
   #calendar {
     grid-column-start: 2;
     grid-row-start: 3;
-    position: relative;
-    top: 20vh;
-    left: 10px;
-    height: 200px;
+
   }
 }
 #content > h2 {
