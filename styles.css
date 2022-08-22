@@ -229,7 +229,7 @@ i:hover {
   display: block;
   position: absolute;
   background: #eee4dd;
-  padding:0;
+  padding: 0;
   margin-top: 30px;
   width: 300%;
   text-align: center;
@@ -247,8 +247,7 @@ i:hover {
 #photo {
   width: 100%;
   grid-column: 1;
-  grid-row-start: 3
-  ;
+  grid-row-start: 3;
   box-shadow: 5px 5px #eecb6c;
   border: 1px solid black;
   margin: 20px 0;
@@ -324,7 +323,6 @@ i:hover {
   #calendar {
     grid-column-start: 2;
     grid-row-start: 3;
-
   }
 }
 #content > h2 {
@@ -353,6 +351,41 @@ i:hover {
 }
 #gallery img:hover {
   transform: scale(1.2);
+}
+.image2 {
+  display: none;
+}
+.visible {
+  display: block;
+  max-width: 80vw;
+  max-height: 80vh;
+  position: fixed;
+  z-index: 100;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#exit {
+  color: red;
+  font-size: 30px;
+  position: fixed;
+  z-index: 101;
+  left: 20vw;
+  font-weight: bolder;
+}
+#exit:hover {
+  cursor: pointer;
+}
+.invisiblex {
+  visibility: hidden;
+}
+.visiblex {
+  visibility: visible;
 }
 @media (max-width: 1069px) {
   #titlemain {
