@@ -45,3 +45,6 @@ h3 {
     flex-direction: column;
   }
 }
+ul {
+  list-style-type: none;
+}

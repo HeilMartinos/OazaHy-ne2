@@ -1,3 +1,4 @@
+/////////////////
 var whole = document.getElementById("exit");
 function hide() {
   for (i = 1; i <= 4; i++) {
@@ -30,3 +31,4 @@ var photo4 = document.getElementById("photo4");
 photo4.addEventListener("click", function () {
   show(4);
 });
+///////////
